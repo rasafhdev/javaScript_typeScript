@@ -1,0 +1,70 @@
+/* Estilos globais */
+* {
+    margin: 0; /* Remove as margens padrão de todos os elementos. */
+    padding: 0; /* Remove os espaçamentos internos padrão de todos os elementos. */
+    box-sizing: border-box; /* Inclui o padding e a borda dentro da largura e altura definidas de um elemento. */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte como Arial ou, caso indisponível, uma fonte genérica sem serifa. */
+    background: url('../img/background.jpg') no-repeat center center fixed; /* Adiciona uma imagem de fundo que não se repete e permanece fixa ao rolar a página. */
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a área visível, mantendo a proporção. */
+    display: flex; /* Ativa o Flexbox, um sistema de layout para alinhar elementos. */
+    justify-content: center; /* Centraliza os elementos filhos horizontalmente. */
+    align-items: center; /* Centraliza os elementos filhos verticalmente. */
+    height: 100vh; /* Define a altura do corpo da página como 100% da altura visível da janela. */
+}
+
+/* Contêiner principal */
+.container {
+    background-color: rgb(255, 255, 255, 0.70); /* Define o fundo do contêiner como branco. */
+    border-radius: 30px; /* Arredonda as bordas do contêiner com um raio de 30 pixels. */
+    width: 90%; /* Faz o contêiner ocupar 90% da largura da janela, para torná-lo responsivo. */
+    max-width: 600px; /* Define uma largura máxima de 600 pixels, evitando que o contêiner fique muito largo em telas grandes. */
+    padding: 20px; /* Adiciona um espaço interno de 20 pixels ao redor do conteúdo dentro do contêiner. */
+    text-align: center; /* Centraliza horizontalmente o texto e os elementos dentro do contêiner. */
+    box-shadow: 20px 20px 10px rgba(255, 255, 255, 0.26); /* Adiciona uma sombra ao contêiner com deslocamento vertical de 8px, difusão de 30px e cor preta com 20% de opacidade. */
+}
+
+/* Título */
+.titulo {
+    font-size: 24px; /* Define o tamanho do texto do título como 24 pixels. */
+    font-weight: bold; /* Deixa o texto em negrito. */
+    color: #333; /* Define a cor do texto como cinza escuro. */
+    margin-bottom: 20px; /* Adiciona um espaçamento de 20 pixels abaixo do título. */
+}
+
+/* Imagem da logo */
+.logo {
+    width: 100px; /* Define a largura da imagem como 100 pixels. */
+    height: 100; /* Mantém a proporção original da imagem ao ajustá-la. */
+    margin-bottom: 20px; /* Adiciona um espaço de 20 pixels abaixo da imagem. */
+    
+}
+
+/* Botão */
+.botao {
+    border-radius: 50px; /* Deixa as bordas do botão arredondadas. */
+    background-color: #f04a4a; /* Define a cor de fundo do botão como vermelho (#f04a4a). */
+    color: #fff; /* Define a cor do texto do botão como branco. */
+    border: none; /* Remove qualquer borda ao redor do botão. */
+    padding: 10px 20px; /* Adiciona espaçamento interno no botão:
+                           - 10px no topo e na parte inferior.
+                           - 20px nas laterais. */
+    font-size: 16px; /* Define o tamanho do texto no botão como 16 pixels. */
+    cursor: pointer; /* Altera o cursor para o ícone de "mãozinha" ao passar sobre o botão. */
+    transition: background-color 0.5s ease; /* Adiciona uma transição suave ao mudar a cor de fundo do botão (duração: 0.3 segundos). */
+}
+
+.botao:hover {
+    background-color: #d93838; /* Muda a cor de fundo do botão para um tom mais escuro de vermelho quando o mouse está sobre ele. */
+}
+
+/* Resposta */
+.resposta {
+    margin-top: 20px; /* Adiciona um espaço de 20 pixels acima do texto de resposta. */
+    color: #333; /* Define a cor do texto da resposta como cinza escuro. */
+    font-size: 14px; /* Define o tamanho da fonte da resposta como 14 pixels. */
+    visibility: hidden; /* Esconde o texto da resposta inicialmente. */
+}
+
